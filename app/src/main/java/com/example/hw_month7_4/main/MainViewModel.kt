@@ -1,0 +1,17 @@
+package com.example.hw_month7_4.main
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.liveData
+import com.example.hw_month7_4.data.Repository
+import com.example.hw_month7_4.data.local.Statistic
+import kotlinx.coroutines.Dispatchers
+
+class MainViewModel : ViewModel() {
+    private val repository = Repository()
+
+    fun addStatistic(model: Statistic): LiveData<Long> = liveData(Dispatchers.IO) {
+        val insertedId = repository.addStatistic(model)
+        emit(insertedId)
+    }
+}

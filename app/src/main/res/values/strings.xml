@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">hw_month7_4</string>
+    <string-array name="countries">
+        <item>Результат: Победа</item>
+        <item>Результат: Поражение</item>
+    </string-array>
+
+    <string-array name="settings">
+        <item>Удалить</item>
+        <item>Информация</item>
+    </string-array>
+
+    <string-array name="difficulties">
+        <item>Сложность: Лёгкая</item>
+        <item>Сложность: Средняя</item>
+        <item>Сложность: Сложная</item>
+        <item>Сложность: Экспертная</item>
+    </string-array>
+</resources>
